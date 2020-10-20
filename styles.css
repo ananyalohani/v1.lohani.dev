@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    height: 1200px;
+    color: #B7B7FD;
+    background-color: #010135;
+}
+
+a {
+    color: #010135;
+    text-decoration: none;
+}
+
+.page {
+    padding-top: 200px;
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #010135;
+    background-color: #B7B7FD;
+    
+    width: 100%;
+    padding: 50px;
+}
+  
+.menu, .socials-list {
+    margin-top: 15px;
+}
+  
+.menu > li , .socials-list > li {
+    display: inline;
+    margin-right: 50px;
+}
+  
+.menu > li:last-of-type {
+    margin-right: 0;
+}
+
+.main-heading, .name {
+    display: inline;
+}
+
+.logo {
+    width: 2%;
+}
+
+.Socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: auto;
+}
