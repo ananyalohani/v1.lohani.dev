@@ -42,6 +42,10 @@
     text-decoration: underline;
 }
 
+.links:hover {
+    color: #575799;
+}
+
 a {
     color: var(--bg);
     text-decoration: none;
@@ -51,7 +55,8 @@ body {
     font-family: 'Cabin', sans-serif;
     display: flex;
     flex-direction: column;
-    font-size: 16px;
+    line-height: 25px;
+    font-size: 17px;
     color: var(--accent);
     background-color: var(--bg);
 }
@@ -104,11 +109,50 @@ hr {
     font-size: 18px;
     
     width: 100%;
-    padding-top: 50px;
+    padding-top: 70px;
+    z-index: 999;
 }
 
 .title {
-    margin: 10px 0;
+    margin: 20px 0;
+}
+
+.grid {
+    background-color: #6c6cbd;
+    width: auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto auto;
+    margin-top: 10px;
+}
+
+.grid-item {
+    width: 30%;
+    max-width: 300px;
+    padding-bottom: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    transition: all linear 0.3s
+}
+
+.grid-item img:hover {
+    padding: 10px;
+    background-color: #4c4c90;
+    border-radius: 5px;
+    transform: scale(1.2);
+    position: relative;
+    z-index: 1;
+}
+
+.grid-item--width2 img:hover {
+    padding: 10px;
+    background-color: #4c4c90;
+    border-radius: 5px;
+    transform: scale(1.5);
+    position: relative;
+    z-index: 1;
 }
 
 .Socials {
@@ -121,15 +165,20 @@ hr {
 
 .socials-list > li {
     display: block;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .logo {
     width: 20px;
     margin-right: 20px;
     margin-left: 10px;
+    margin-bottom: -5px;
 
-    transition: all linear 0.3s;
+    transition: all linear 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.2);
 }
 
 .Contact {
@@ -142,13 +191,23 @@ hr {
 
 .contact-list > li {
     display: block;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
-#particles-js {
+/* #particles-js {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-}
+}*/
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  
