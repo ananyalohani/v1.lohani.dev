@@ -10,9 +10,9 @@
 }
 
 .menu {
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
-  
+
 .menu > li {
     display: inline;
     margin-right: 30px;
@@ -93,6 +93,7 @@ p {
 
 .main-heading, .name {
     display: inline;
+    margin-bottom: 15px;
 }
 
 hr {
@@ -119,6 +120,7 @@ hr {
     flex-wrap: wrap;
     font-weight: bold;
     font-size: 18px;
+    align-items: center;
     
     width: 100%;
     padding-top: 60px;
@@ -210,6 +212,11 @@ hr {
 /* Mobile styling */
 @media only screen and (max-width: 450px) {
 
+    hr {
+        margin: -10px 0 20px ;
+        width: 100%;
+    }
+
     html {
         min-height: 100vh;
     }
@@ -223,6 +230,7 @@ hr {
 
     .header {
         flex-direction: column !important;
+        align-items: flex-start;
         justify-content: first baseline !important;
     }
 
@@ -258,12 +266,12 @@ hr {
 
     .grid {
         background-color: #6c6cbd;
-        width: 85%;
+        width: 100%;
         height: auto;
-        padding: 7px;
+        padding: 10px;
+        /* padding-top: 10px; */
         border-radius: 5px;
-        margin: auto auto;
-        margin-top: 10px;
+        margin: 10px auto 0;
     }
 
     .grid-item {
@@ -273,6 +281,8 @@ hr {
     }
     
     .grid-item img {
+        display: block;
+        margin: 0 auto;
         width: 90%;
         transition: all linear 0.3s
     }
@@ -300,6 +310,6 @@ hr {
     }
 
     #particles-js {
-        visibility: hidden;
+        display: none;
     }
 }
