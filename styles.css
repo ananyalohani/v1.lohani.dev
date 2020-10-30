@@ -223,7 +223,7 @@ hr {
 
     .header {
         flex-direction: column !important;
-        justify-content: flex-start !important;
+        justify-content: first baseline !important;
     }
 
     .main-heading {
@@ -234,9 +234,13 @@ hr {
         font-size: 15px;
     }
 
+    .menu > li {
+        margin-right: 10px;
+    }
+
     .menu > li:first-of-type > a {
         margin-left: 0;
-        padding-left: 0;
+        padding-left: 5px;
     }
 
     .page {
@@ -250,6 +254,16 @@ hr {
         color: var(--bg);
         border-radius: 0;
         box-shadow: none;
+    }
+
+    .grid {
+        background-color: #6c6cbd;
+        width: 85%;
+        height: auto;
+        padding: 20px;
+        border-radius: 5px;
+        margin: auto auto;
+        margin-top: 10px;
     }
 
     p {
