@@ -1,3 +1,3 @@
 # personal-website
-My personal website/portfolio. Visit it at: https://www.ananyalohani.me/.
+The first edition of my personal website. [Check it out.](v1.ananyalohani.me)
 
